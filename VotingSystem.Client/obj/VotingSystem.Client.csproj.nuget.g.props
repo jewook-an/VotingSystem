@@ -14,8 +14,12 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor/27.1.56/buildTransitive/Syncfusion.Blazor.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor/27.1.56/buildTransitive/Syncfusion.Blazor.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.sdk.webassembly.pack/8.0.8/build/Microsoft.NET.Sdk.WebAssembly.Pack.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.sdk.webassembly.pack/8.0.8/build/Microsoft.NET.Sdk.WebAssembly.Pack.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.illink.tasks/8.0.8/build/Microsoft.NET.ILLink.Tasks.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.illink.tasks/8.0.8/build/Microsoft.NET.ILLink.Tasks.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly/8.0.0/build/net8.0/Microsoft.AspNetCore.Components.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly/8.0.0/build/net8.0/Microsoft.AspNetCore.Components.WebAssembly.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">/home/codespace/.nuget/packages/microsoft.aspnetcore.components.webassembly.server/8.0.0</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>
+    <PkgMicrosoft_NET_Sdk_WebAssembly_Pack Condition=" '$(PkgMicrosoft_NET_Sdk_WebAssembly_Pack)' == '' ">/home/codespace/.nuget/packages/microsoft.net.sdk.webassembly.pack/8.0.8</PkgMicrosoft_NET_Sdk_WebAssembly_Pack>
+    <PkgMicrosoft_NET_ILLink_Tasks Condition=" '$(PkgMicrosoft_NET_ILLink_Tasks)' == '' ">/home/codespace/.nuget/packages/microsoft.net.illink.tasks/8.0.8</PkgMicrosoft_NET_ILLink_Tasks>
   </PropertyGroup>
 </Project>

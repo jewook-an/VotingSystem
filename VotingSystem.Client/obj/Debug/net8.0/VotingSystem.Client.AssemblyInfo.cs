@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("VotingSystem")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("VotingSystem.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08a8884fd5f77a0d7c06d4441c21e6c48980a1b5")]
-[assembly: System.Reflection.AssemblyProductAttribute("VotingSystem")]
-[assembly: System.Reflection.AssemblyTitleAttribute("VotingSystem")]
+[assembly: System.Reflection.AssemblyProductAttribute("VotingSystem.Client")]
+[assembly: System.Reflection.AssemblyTitleAttribute("VotingSystem.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment 클래스에서 생성되었습니다.
