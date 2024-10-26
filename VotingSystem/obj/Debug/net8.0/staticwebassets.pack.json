@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\VotingSystem\\VotingSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\VotingSystem.bundle.scp.css",
+      "PackagePath": "staticwebassets\\VotingSystem.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\VotingSystem\\VotingSystem\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\VotingSystem\\VotingSystem\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\VotingSystem\\VotingSystem\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.VotingSystem.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.VotingSystem.props",
+      "PackagePath": "build\\VotingSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.VotingSystem.props",
+      "PackagePath": "buildMultiTargeting\\VotingSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.VotingSystem.props",
+      "PackagePath": "buildTransitive\\VotingSystem.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
