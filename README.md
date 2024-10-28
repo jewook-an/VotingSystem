@@ -41,9 +41,13 @@ Blazor 로 만든 Test 용 Vote module
 
 
 5. Web Browser Loading
+     5-1. 투표화면1 생성 (Project Type 입력)
 
-<img width="687" alt="투표화면" src="https://github.com/user-attachments/assets/07b3516f-3388-4dd9-9dd5-9464be07ce6a">
+<img width="657" alt="투표화면1" src="https://github.com/user-attachments/assets/10f216db-dc33-4b50-b99d-2e9099dfbec8">
 
 
+     5-1. 투표화면2 생성 (Project Type 입력)
+
+<img width="678" alt="투표화면2" src="https://github.com/user-attachments/assets/7a9f4ac6-68fe-4ef6-b609-cfeb30a4995a">
 
 
