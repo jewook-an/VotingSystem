@@ -1,5 +1,13 @@
 # VotingSystem
 Blazor 로 만든 Test 용 Vote module
+* 목차
+1. 환경변수 선택
+2. 프로젝트 생성 (SKIP 가능)
+3. github source 다운받기
+4. Terminal, CMD 실행
+5. Web Browser 확인
+* Option : Download 불가시 처리 사항
+
 
 * 초기 파일 시작 TEST
 * CMD 창 확인 : 설치 미완료 
@@ -51,3 +59,13 @@ Blazor 로 만든 Test 용 Vote module
 <img width="678" alt="투표화면2" src="https://github.com/user-attachments/assets/7a9f4ac6-68fe-4ef6-b609-cfeb30a4995a">
 
 
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+** Download 불가시 
+<img width="893" alt="001" src="https://github.com/user-attachments/assets/9a7798e2-b24e-4318-8eb9-967cc89aea45">
+
+<img width="893" alt="002" src="https://github.com/user-attachments/assets/4e031db8-b3b7-4cd0-9dbc-a1fa6e7103ed">
+
+<img width="890" alt="003" src="https://github.com/user-attachments/assets/0aea60b4-ec09-410f-a164-a49fdc758bd0">
