@@ -1,6 +1,16 @@
 # VotingSystem
 Blazor 로 만든 Test 용 Vote module
 
+* 초기 파일 시작 TEST
+* CMD 창 확인 : 설치 미완료 
+<img width="649" alt="msbuild" src="https://github.com/user-attachments/assets/1609d9a9-e5e6-40b4-bcb5-113e6644187b">
+
+
+* CMD 창 확인 : 설치 완료 
+<img width="649" alt="msbuild2" src="https://github.com/user-attachments/assets/0d66f5ed-8762-4c03-b2bf-3c545e2aa24f">
+
+  
+
 1. 환경변수 선택
 
 <img width="1017" alt="환경변수" src="https://github.com/user-attachments/assets/8f63bda9-37d4-4bdb-913a-3273732f686d">
