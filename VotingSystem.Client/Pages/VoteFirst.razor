@@ -1,0 +1,75 @@
+@page "/VoteFirst"
+@rendermode InteractiveAuto
+
+<PageTitle>Vote</PageTitle>
+
+<h1>투표 테스트 1 </h1>
+
+<p role="status"> 총 투표수 : @totCount</p>
+<!--
+원하는 항목에 투표하세요:
+[투표 항목 1 버튼]  현재 득표수: 0
+[투표 항목 2 버튼]  현재 득표수: 0
+[투표 항목 3 버튼]  현재 득표수: 0
+--------------------------------------
+투표가 완료되었습니다. 결과를 확인하세요:
+
+항목 1: 3표 (30%)
+항목 2: 5표 (50%)
+항목 3: 2표 (20%)
+-->
+<p role="status"> 원하는 항목에 투표하세요 (투표율은 소수점1자리 반올림)</p>
+<button class="btn btn-primary" @onclick="ICRCount1">1번 투표</button>
+<span role="status"> 항목 1 현재 득표수 : @ICount1 (@ICount1Rate %)</span> <br/> <br/>
+<button class="btn btn-primary" @onclick="ICRCount2">2번 투표</button>
+<span role="status"> 항목 2 현재 득표수 : @ICount2 (@ICount2Rate %)</span> <br/> <br/>
+<button class="btn btn-primary" @onclick="ICRCount3">3번 투표</button>
+<span role="status"> 항목 3 현재 득표수 : @ICount3 (@ICount3Rate %)</span> <br/> <br/>
+
+@code {
+    private int totCount = 0;
+    private int ICount1 = 0;
+    private int ICount2 = 0;
+    private int ICount3 = 0;
+    private double ICount1Rate = 0;
+    private double ICount2Rate = 0;
+    private double ICount3Rate = 0;
+
+    private void ICRCount1()
+    {
+        ICount1++;
+        totCount++;
+        Rateprint();
+    }
+
+    private void ICRCount2()
+    {
+        ICount2++;
+        totCount++;
+        Rateprint();
+    }
+
+    private void ICRCount3()
+    {
+        ICount3++;
+        totCount++;
+        Rateprint();
+    }
+
+    private void Rateprint()
+    {
+        ICount1Rate = RoundAction(totCount > 0 ? (ICount1 * 100.0 / totCount) : 0);
+        ICount2Rate = RoundAction(totCount > 0 ? (ICount2 * 100.0 / totCount) : 0);
+        ICount3Rate = RoundAction(totCount > 0 ? (ICount3 * 100.0 / totCount) : 0);
+        @* Console.WriteLine("ICount1Rate : " + RoundAction(totCount > 0 ? (ICount1 * 100.0 / totCount) : 0));
+        Console.WriteLine("ICount2Rate : " + RoundAction(totCount > 0 ? (ICount2 * 100.0 / totCount) : 0));
+        Console.WriteLine("ICount3Rate : " + RoundAction(totCount > 0 ? (ICount3 * 100.0 / totCount) : 0)); *@
+    }
+
+    public double RoundAction(double num)
+    {
+        double RA;
+        RA = Math.Round((num + 0.05) * 10) / 10.0;
+        return RA;
+    }
+}

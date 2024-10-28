@@ -1,0 +1,81 @@
+@page "/VoteSecond"
+@rendermode InteractiveAuto
+@inject IJSRuntime JS
+
+<PageTitle>Vote</PageTitle>
+
+<h1>투표 테스트</h1>
+
+<p role="status"> 총 투표수 : @totalVotes</p>
+
+<p role="status"> 원하는 항목에 투표하세요</p>
+
+    @if (!hasVoted)
+    {
+        <div class="container mx-auto p-4">
+            <div class="grid gap-4">
+                @foreach (var option in votingOptions)
+                {
+                    var local_v = option.Id;
+                    <div class="border p-4 rounded">
+                        <button class="btn btn-primary" @onclick="() => HandleVote(local_v)">@local_v 번 투표</button>
+                        <div class="mt-2">
+                            현재 득표수: @option.Votes
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6">
+            투표가 완료되었습니다!
+        </div>
+    }
+
+    <div class="mt-8">
+        <h2 class="text-xl font-bold mb-4">투표 결과</h2>
+        @foreach (var option in votingOptions)
+        {
+            var percentage = totalVotes > 0 ? (option.Votes * 100.0 / totalVotes) : 0;
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span>@option.Name</span>
+                    <span>@option.Votes 표 (@percentage.ToString("F1")%)</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded">
+                    <div class="bg-blue-600 text-xs text-white text-center p-0.5 rounded"
+                         style="width: @percentage%">
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+@code {
+    public class VotingOption
+    {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public int Votes { get; set; }
+    }
+
+    private List<VotingOption> votingOptions = new List<VotingOption>
+    {
+        new VotingOption { Id = 1, Name = "옵션 1", Votes = 0 },
+        new VotingOption { Id = 2, Name = "옵션 2", Votes = 0 },
+        new VotingOption { Id = 3, Name = "옵션 3", Votes = 0 }
+    };
+    private bool hasVoted = false;
+    private int totalVotes => votingOptions.Sum(o => o.Votes);
+
+    private void HandleVote(int id)
+    {
+        var option = votingOptions.FirstOrDefault(o => o.Id == id);
+        if (option != null && !hasVoted)
+        {
+            option.Votes++;
+        }
+    }
+}
